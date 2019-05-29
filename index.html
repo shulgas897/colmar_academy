@@ -12,15 +12,23 @@
 <body>
 	<!-- Header Begining -->
 	<header>
-		<div class="logo">
+		<!-- For Big Screen -->
+		<div class="logo big">
 			<img id="logo-img" src="./images/ic-logo.svg">
 			<h3 id="logo-title" class="upper">colmar<span class="font-weight-normal">academy</span></h3>
 		</div>
-		<nav class="nav upper font-weight-bold">
+		<nav class="nav upper font-weight-bold big">
 			<a class="nav-link" href="#on_campus">On campus</a>
 			<a class="nav-link" href="#oline">Online</a>
 			<a class="nav-link" href="#for_companies">For companies</a>
 			<a class="nav-link" href="#sign_in">Sign in</a>
+		</nav>
+		<!-- For Small Screen -->
+		<nav class="nav upper font-weight-bold small">
+			<a href="#"><img src="./images/ic-logo.svg"></a>
+			<a class="move" href="#on_campus"><img src="./images/ic-on-campus.svg"></a>
+			<a class="move" href="#oline"><img src="./images/ic-online.svg"></a>
+			<a class="move" href="#sign_in"><img src="./images/ic-login.svg"></a>
 		</nav>
 	</header>
 	<!-- Header End -->
@@ -45,7 +53,7 @@
 		<!-- On Campus Begining -->
 		<section id="on_campus" class="container">
 			<div class="row">
-				<div class="col col-sm-7">
+				<div class="col col-sm-7 big">
 					<img src="./images/information-main.jpg" alt="student reading">
 					<h2>It doesn't hurt to keep practicing</h2>					
 					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -55,7 +63,8 @@
 				<div class="col col-sm-5">
 					<div class="row bd-gray">
 						<div class="col col-sm-4">
-							<img src="./images/information-orientation.jpg">
+							<img class="big" src="./images/information-orientation.jpg">
+							<img class="small" src="./images/information-orientation-mobile.jpg">
 						</div>
 						<div class="col col-sm-8">
 							<h4>Orientation date</h4>
@@ -65,7 +74,8 @@
 					</div>
 					<div class="row bd-gray">
 						<div class="col col-sm-4">
-							<img src="./images/information-campus.jpg">
+							<img class="big" src="./images/information-campus.jpg">
+							<img class="small" src="./images/information-campus-mobile.jpg">
 						</div>
 						<div class="col col-sm-8">
 							<h4>Our campus</h4>
@@ -75,7 +85,8 @@
 					</div>
 					<div class="row bd-gray">
 						<div class="col col-sm-4">
-							<img src="./images/information-guest-lecture.jpg">
+							<img class="big" src="./images/information-guest-lecture.jpg">
+							<img class="small" src="./images/information-guest-lecture-mobile.jpg">
 						</div>
 						<div class="col col-sm-8">
 							<h4>Our guest lecture</h4>
@@ -89,13 +100,33 @@
 		<!-- On Campus End -->
 
 		<!-- On Line Begining -->
-		<section id="oline" class="container bg-gray">
+		<section id="oline" class="container bg-gray bg-white">
 			<div class="row">
-				<div class="col center">
+				<div class="col center upper">
 					<h2>Start learning</h2>
 				</div>
+			<!-- Small Screen -->
+				<div class="col bg-gray small">
+					<h4>Software engineering</h4>
+				</div>
+				<div class="col bg-gray small">
+					<h4>Computer Art</h4>
+				</div>
+				<div class="col bg-gray small">
+					<h4>Design</h4>
+				</div>
+				<div class="col bg-gray small">
+					<h4>Data</h4>
+				</div>
+				<div class="col bg-gray small">
+					<h4>Business</h4>
+				</div>
+				<div class="col bg-gray small">
+					<h4>Marketing</h4>
+				</div>
+			<!-- Big Screen -->
 			</div>
-			<div class="row">
+			<div class="row big">
 				<div class ="col course">
 					<img src="./images/course-software.jpg">
 					<div class="course-description">
@@ -121,7 +152,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row big">
 				<div class="col course">
 					<img src="./images/course-data.jpg">
 					<div class="course-description">
@@ -153,7 +184,7 @@
 		<!-- For Companies Begining -->
 		<section id="for_companies" class="container">
 			<div class="row">
-				<div class="col center">
+				<div class="col center upper">
 					<h2>Thesis exhibit</h2>
 				</div>
 			</div>
@@ -163,10 +194,10 @@
 					  <source src="./videos/thesis.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 					</video>
-					<h2>Reimagine urban</h2>
-					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+					<h2 class="big">Reimagine urban</h2>
+					<p class="big">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
 				</div>
-				<div class="col col-sm-5">
+				<div class="col col-sm-5 big">
 					<div class="row bd-gray">
 						<div class="col col-sm-4">
 							<img src="./images/thesis-fisma.jpg">
@@ -198,7 +229,7 @@
 			<div class="col">
 				<p>&copy; 2016 Colmar Academy. All rights reserved</p>
 			</div>
-			<nav class="col foot-nav">
+			<nav class="col foot-nav big">
 				<a class="foot-link" href="#">Terms</a>
 				<a class="foot-link" href="#">Privacy</a>
 			</nav>

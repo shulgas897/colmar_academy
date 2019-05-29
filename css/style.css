@@ -34,6 +34,9 @@ h4 {font-size: 2rem;}
 h5 {font-size: 1.7rem;}
 p {font-size: 1.5rem;}
 
+.small {
+		display: none;
+	}
 
 video {
 	width: 100%;
@@ -241,56 +244,75 @@ footer p {
 }
 
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 720px) {
 	html {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
-	.row {
-		display: block;
-		width: 100%;
 
-	}
-
-	.col {
-		display: block;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-	}
-
-	#oline {
-		background-color: white;
-		padding: 0;
-		margin: 0;
-	}
-
-	#oline img,  #oline p {
+	.big {
 		display: none;
 	}
 
-	#oline .row {
+	.small {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.nav {
 		width: 100%;
-		height: auto;
-		display: block;
+	}
+
+	.move:hover {
+		position: relative;
+		top: 2px;
+	}
+
+	.row {
 		flex-direction: column;
+		width: 100%;
+		/*border: 1px solid green;*/
+	}
+
+	.col {
+		width: 100%;
 		padding: 0;
 		margin: 0;
+		/*border: 1px solid yellow;*/
+	}
+
+	main {
+		/*border: 1px solid red;*/
+	}
+
+	.jumbotron .col-sm-5 {
+		width: 90%;
+		padding: 0;
+		padding-left: 5%;
+	}
+
+	h1 {
+		margin-top: 24px;
+	}
+
+	.bg-white {
+		background-color: white;
 	}
 
 	#oline .col {
-		display: block;
-		width: 100%;
-	}
-
-	.course {
-		
+		box-sizing: border-box;
+		margin: 2px auto;
+		padding: 10px 16px 18px 0;
 	}
 
 	#oline h4 {
-		background-color: #D3D3D3;
 		width: 100%;
-		padding: 10px;
-		margin: 30px;
+		align-text: left;
+		padding-left: 16px;
+	}
+
+	#oline .bg-gray:hover {
+		background-color: #393939;
+		color: white;
 	}
 }
