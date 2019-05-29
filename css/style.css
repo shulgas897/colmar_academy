@@ -1,5 +1,218 @@
-body {
+/*Genaral styling*/
+
+html {
+	font-size: 18px;
+	font-family: Poppins;
+	color: #393939;
+}
+
+html, body {
 	margin: 0;
 	padding: 0;
 	background-color: white;
+		
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 2.5rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 1.7rem;}
+p {font-size: 1.5rem;}
+
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.bg-gray {
+	background-color: #D3D3D3;
+}
+
+.row {
+	display: flex;
+	padding: 32px 0 32px 0;
+}
+
+section .row .col .row {
+	padding: 0;
+}
+
+.col {
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.font-weight-normal {
+	font-weight: normal;
+}
+
+.font-weight-bold {
+	font-weight: bold;
+}
+
+.col-sm-7 {
+	width: 60%;
+	padding: 0 24px 0 24px;
+}
+
+.col-sm-5 {
+	width: 40%;
+}
+
+.course {
+	width: 33.3%;
+	padding: 0;
+	margin: 0 16px;
+	background-color: white;
+}
+
+.course-description {
+	margin: 16px;
+}
+
+.col-sm-4 {
+	width: 33.3%;
+	padding: 16px;
+	background-color: white;
+}
+
+.col-sm-8 {
+	widht: 66.7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 8px;
+
+}
+
+header {
+	padding: 16px 24px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: white;
+	width: 100%;
+}
+
+.logo {
+	display: flex;
+}
+
+#logo-img {
+	height: 32px;
+	width: auto;
+}
+
+.nav {
+	margin: 0 48px 0 0;
+}
+
+.nav-link {
+	margin: 0 8px;
+	padding: 0 5px 0 5px;
+	text-decoration: none;
+	color: gray;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+
+.nav-link:hover {
+	background-color: gray;
+	color: white;
+	border: 1px solid gray;
+}
+
+
+main, footer {
+	position: relative;
+	top: 64px;
+}
+
+
+.jumbotron .col-sm-5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+}
+
+.jumbotron .btn {
+	background-color: gray;
+	color: white;
+	padding: 8px 0;
+	margin: 8px 0;
+	font-size: 2rem;
+}
+
+.btn {
+	text-decoration: none;
+	color: gray;
+}
+
+.btn:hover {
+	color: black;
+}
+
+#oline {
+	padding: 0 56px 0 56px;
+}
+
+#oline .row .course{
+	margin-top: -32px;
+}
+
+footer .row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+footer {
+	padding: 0 24px;
+}
+
+footer p {
+	font-size: 0.75rem;
+}
+
+.foot-nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.foot-link {
+	background-color: white;
+	color: gray;
+	text-decoration: none;
+	border: 1px solid gray;
+	border-radius: 3px;
+	margin: 0 8px;
+	padding: 0 5px;
+}
+
+.foot-link:hover {
+	color: white;
+	background-color: gray;
+	border: 1px solid gray;
 }

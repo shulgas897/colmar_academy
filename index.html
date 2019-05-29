@@ -2,135 +2,209 @@
 <html>
 
 <head>
+	<title>Colmar Academy</title>
 	<link href="./css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<!-- Header Begining -->
 	<header>
-		<div id="logo">
-			<img src="./images/ic-logo.svg">
-			<span>colmar<span>academy</span></span>
+		<div class="logo">
+			<img id="logo-img" src="./images/ic-logo.svg">
+			<h3 id="logo-title" class="upper">colmar<span class="font-weight-normal">academy</span></h3>
 		</div>
-		<nav>
-			<a href="#on_campus">On campus</a>
-			<a href="#oline">Online</a>
-			<a href="#for_companies">For companies</a>
-			<a href="#sign_in">Sign in</a>
+		<nav class="nav upper font-weight-bold">
+			<a class="nav-link" href="#on_campus">On campus</a>
+			<a class="nav-link" href="#oline">Online</a>
+			<a class="nav-link" href="#for_companies">For companies</a>
+			<a class="nav-link" href="#sign_in">Sign in</a>
 		</nav>
 	</header>
+	<!-- Header End -->
 
 	<main>
-		<section>
-			<div>
-				<img src="./images/banner.jpg" alt="students reading">
-			</div>
-			<div>
-				<h1>Learn something new everyday</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<button>
-					<a href="#" class="button">Start here</a>
-				</button>
+		<!-- Jumbotron Begining -->
+		<section class="jumbotron bg-gray">
+			<div class="row">
+				<div class="col col-sm-7">
+					<img src="./images/banner.jpg" alt="students reading">
+				</div>
+				<div class="col col-sm-5">
+						<h1>Learn something new everyday</h1>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<button type="button" class="btn">Start here</button>
+				</div>
 			</div>
 		</section>
-			<div>
-				<img src="./images/information-main.jpg" alt="student reading">
-				<h2>It doesn't hurt to keep practicing</h2>
-				<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-				<br>
-				<p>Emanuel, Sr Strategist at Hiring.com</p>
+		<!-- Jumbotron End -->
+
+		<!-- On Campus Begining -->
+		<section id="on_campus" class="container">
+			<div class="row">
+				<div class="col col-sm-7">
+					<img src="./images/information-main.jpg" alt="student reading">
+					<h2>It doesn't hurt to keep practicing</h2>					
+					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+					<br>
+					<p>Emanuel, Sr Strategist at Hiring.com</p>
+				</div>
+				<div class="col col-sm-5">
+					<div class="row">
+						<div class="col col-sm-4">
+							<img src="./images/information-orientation.jpg">
+						</div>
+						<div class="col col-sm-8">
+							<h4>Orientation date</h4>
+							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+							<a class="btn" href="#">Read more</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-4">
+							<img src="./images/information-campus.jpg">
+						</div>
+						<div class="col col-sm-8">
+							<h4>Our campus</h4>
+							<p>Find which campus is close by you</p>
+							<a class="btn" href="#">Read more</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-4">
+							<img src="./images/information-guest-lecture.jpg">
+						</div>
+						<div class="col col-sm-8">
+							<h4>Our guest lecture</h4>
+							<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+							<a class="btn" href="#">Read more</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div>
-				<div class="article">
-					<img src="./images/information-orientation.jpg">
-					<h4>Orientation date</h4>
-					<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-					<a class="reed_more" href="#">Read more</a>
-				</div>
-				<div class="article">
-					<img src="./images/information-campus.jpg">
-					<h4>Our campus</h4>
-					<p>Find which campus is close by you</p>
-					<a class="reed_more" href="#">Read more</a>
-				</div>
-				<div class="article">
-					<img src="./images/information-guest-lecture.jpg">
-					<h4>Our guest lecture</h4>
-					<p>Join a keynote with Oliver Sack about music in medical treatment</p>
-					<a class="reed_more" href="#">Read more</a>
+		</section>
+		<!-- On Campus End -->
+
+		<!-- On Line Begining -->
+		<section id="oline" class="container bg-gray">
+			<div class="row">
+				<div class="col center">
+					<h2>Start learning</h2>
 				</div>
 			</div>
-		<section>
-			<h2>Start learning</h2>
-			<div>
-				<div class="course">
+			<div class="row">
+				<div class ="col course">
 					<img src="./images/course-software.jpg">
-					<h3>Software engineering</h3>
-					<p class="upper">Courses</p>
-					<p>Web Development, Mobile Development, iOT, APIs</p>
+					<div class="course-description">
+						<h4>Software engineering</h3>
+						<p class="upper">Courses</p>
+						<p>Web Development, Mobile Development, iOT, APIs</p>
+					</div>
 				</div>
-				<div class="course">
+				<div class="col course">
 					<img src="./images/course-computer-art.jpg">
-					<h3>Computer Art</h3>
-					<p class="upper">Courses</p>
-					<p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+					<div class="course-description">
+						<h4>Computer Art</h3>
+						<p class="upper">Courses</p>
+						<p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+					</div>
 				</div>
-				<div class="course">
+				<div class="col course">
 					<img src="./images/course-design.jpg">
-					<h3>Design</h3>
-					<p class="upper">Courses</p>
-					<p>User Experience Design, User Research, Visual Design</p>
+					<div class="course-description">
+						<h4>Design</h3>
+						<p class="upper">Courses</p>
+						<p>User Experience Design, User Research, Visual Design</p>
+					</div>
 				</div>
-				<div class="course">
+			</div>
+			<div class="row">
+				<div class="col course">
 					<img src="./images/course-data.jpg">
-					<h3>Data</h3>
-					<p class="upper">Courses</p>
-					<p>Data Science, Big Data, SQL, Data Visualization</p>
+					<div class="course-description">
+						<h4>Data</h3>
+						<p class="upper">Courses</p>
+						<p>Data Science, Big Data, SQL, Data Visualization</p>
+					</div>
 				</div>
-				<div class="course">
+				<div class="col course">
 					<img src="./images/course-business.jpg">
-					<h3>Business</h3>
-					<p class="upper">Courses</p>
-					<p>Product Development, Business Development, Startup</p>
+					<div class="course-description">
+						<h4>Business</h3>
+						<p class="upper">Courses</p>
+						<p>Product Development, Business Development, Startup</p>
+					</div>
 				</div>
-				<div class="course">
+				<div class="col course">
 					<img src="./images/course-marketing.jpg">
-					<h3>Marketing</h3>
-					<p class="upper">Courses</p>
-					<p>Analytics, Content Marketing, Mobile Marketing</p>
+					<div class="course-description">
+						<h4>Marketing</h3>
+						<p class="upper">Courses</p>
+						<p>Analytics, Content Marketing, Mobile Marketing</p>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section>
-			<div>
-				<video controls>
-				  <source src="./videos/thesis.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video>
-				<h2>Reimagine urban</h2>
-				<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-			</div>
-			<div>
-				<div class="article">
-					<img src="./images/thesis-fisma.jpg">
-					<h4>Fisma:Design and Prototype</h4>
-					<p>Designer showcase of new prototype product</p>
+		<!-- On Line End -->
+
+		<!-- For Companies Begining -->
+		<section id="for_companies" class="container">
+			<div class="row">
+				<div class="col center">
+					<h2>Thesis exhibit</h2>
 				</div>
-				<div class="article">
-					<img src="./images/thesis-now-and-then.jpg">
-					<h4>Now and then</h4>
-					<p>Research study about New York</p>
+			</div>
+			<div class="row">
+				<div class="col col-sm-7">
+					<video controls>
+					  <source src="./videos/thesis.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<h2>Reimagine urban</h2>
+					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+				</div>
+				<div class="col col-sm-5">
+					<div class="row">
+						<div class="col col-sm-4">
+							<img src="./images/thesis-fisma.jpg">
+						</div>
+						<div class="col col-sm-8">
+							<h4>Fisma:Design and Prototype</h4>
+							<p>Designer showcase of new prototype product</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-4">
+							<img src="./images/thesis-now-and-then.jpg">
+						</div>
+						<div class="col col-sm-8">
+							<h4>Now and then</h4>
+							<p>Research study about New York</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
+		<!-- For Companies End -->
 	</main>
 
-	<footer>
-		<p>2016 Colmar Academy. All rights reserved</p>
-		<nav>
-			<a href="#">Terms</a>
-			<a href="#">Privacy</a>
-		</nav> 
+
+	<!-- Footer Begining -->
+	<footer class="bg-gray">
+		<div class="row">
+			<div class="col">
+				<p>&copy; 2016 Colmar Academy. All rights reserved</p>
+			</div>
+			<nav class="col foot-nav">
+				<a class="foot-link" href="#">Terms</a>
+				<a class="foot-link" href="#">Privacy</a>
+			</nav>
+		</div>
 	</footer>
+	<!-- Footer End -->
 </body>
 
 </html>
